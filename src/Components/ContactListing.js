@@ -18,7 +18,7 @@ function ContactListing() {
             });
     }, []);
     return (
-        <div className="container-fluid">
+        <div className="container">
             <div className="card">
                 <div className="card-title App">
                     <h3>Contact Listing</h3>
