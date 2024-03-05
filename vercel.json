@@ -3,14 +3,14 @@
     "name": "contacts",
     "builds": [
         {
-            "src": "contacts.js",
+            "src": "app.js",
             "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "contacts.js"
+            "dest": "app.js"
         }
     ]
 }
