@@ -18,9 +18,9 @@ function ContactListing() {
             });
     }, []);
     return (
-        <div className="container">
-            <div className="container">
-                <div className="card-title text-center">
+        <div className="container-fluid">
+            <div className="container form-control">
+                <div className="card-title text-center ">
                     <h3>Contact Listing</h3>
                 </div>
                 <div className="card-body">
