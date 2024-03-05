@@ -20,7 +20,7 @@ function ContactListing() {
     return (
         <div className="container">
             <div className="card">
-                <div className="card-title">
+                <div className="card-title container text-center">
                     <h3>Contact Listing</h3>
                 </div>
                 <div className="card-body">
