@@ -36,16 +36,16 @@ function ContactCreate() {
     
 
     return (
-        <div className="container-fluid mt-1">
-                <h4>Create New Contact</h4>
-            <form action="" onSubmit={HandleSubmit}>
-                <dl className=" w-75">
+        <div className="container w-50 mt-1">
+                <h4 className="text-center">Create New Contact</h4>
+            <form action="" onSubmit={HandleSubmit} className="form-control">
+                <dl className="">
                     
                     <dt>Name</dt>
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="text"
                             onBlur={(e) => setValidate(true)}
                             value={name}
@@ -59,7 +59,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="email"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
@@ -69,7 +69,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="text"
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
@@ -79,7 +79,7 @@ function ContactCreate() {
                     <dd>
                         <input
                             required
-                            className="form-control mt-2 w-50"
+                            className="form-control mt-2"
                             type="text-area"
                             value={msg}
                             onChange={(e) => setMsg(e.target.value)}
