@@ -39,7 +39,7 @@ function ContactCreate() {
         <div className="container-fluid mt-1">
                 <h4>Create New Contact</h4>
             <form action="" onSubmit={HandleSubmit}>
-                <dl className=" w-50">
+                <dl className=" w-75">
                     
                     <dt>Name</dt>
                     <dd>
@@ -86,7 +86,7 @@ function ContactCreate() {
                         />
                     </dd>
                    
-                    <button className="mt-2 w-25 btn btn-primary" type="submit">Submit</button>
+                    <button className="mt-2  btn btn-primary" type="submit">Submit</button>
                     <Link to="/" className="mt-2 mx-2 btn btn-danger">
                         Cancel
                     </Link>
