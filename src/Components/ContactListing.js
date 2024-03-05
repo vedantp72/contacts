@@ -46,11 +46,11 @@ function ContactListing() {
                         <tbody className="App">
                             {contdata &&
                                 contdata.map((item) => (
-                                    <tr key={item.Name}>
-                                        <td>{item.Name}</td>
-                                        <td>{item.Email}</td>
-                                        <td>{item.Phone}</td>
-                                        <td>{item.Message}</td>
+                                    <tr key={item.name}>
+                                        <td>{item.name}</td>
+                                        <td>{item.email}</td>
+                                        <td>{item.phone}</td>
+                                        <td>{item.msg}</td>
                                        
                                     </tr>
                                 ))}
