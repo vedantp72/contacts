@@ -8,15 +8,15 @@ function ContactCreate() {
     const [msg, setMsg] = useState("");
     const [validate, setValidate] = useState(false);
     const [error, setError] = useState("");
-    const [style , setStyle] = useState("");
+    const [style, setStyle] = useState("");
 
     const navigate = useNavigate();
-    
-    
+
+
     const HandleSubmit = (e) => {
         e.preventDefault();
         const contdata = { name, email, phone, msg };
-        // console.log(name, email, phone, isActive);
+        // console.log(name, email, phone, msg);
 
         fetch("https://sheet.best/api/sheets/a2e3bed7-e455-4a76-8ff6-8cfdf21db379", {
             method: "POST",
@@ -33,14 +33,14 @@ function ContactCreate() {
                 console.log(err.message);
             });
     };
-    
+
 
     return (
         <div className="container mt-1">
-                <h4 className="text-center">Create New Contact</h4>
+            <h4 className="text-center">Create New Contact</h4>
             <form action="" onSubmit={HandleSubmit} className="form-control">
                 <dl className="">
-                    
+
                     <dt>Name</dt>
                     <dd>
                         <input
@@ -52,7 +52,7 @@ function ContactCreate() {
                             onChange={(e) => setName(e.target.value)}
                         />
                     </dd>
-                    {name.length == 0 && validate && (
+                    {name.length === 0 && validate && (
                         <dd className="text-danger mt-2">Name Required</dd>
                     )}
                     <dt>Email</dt>
@@ -74,7 +74,7 @@ function ContactCreate() {
                             value={phone}
                             onChange={(e) => setPhone(e.target.value)}
                         />
-                    </dd> 
+                    </dd>
                     <dt>Message</dt>
                     <dd>
                         <input
@@ -85,7 +85,7 @@ function ContactCreate() {
                             onChange={(e) => setMsg(e.target.value)}
                         />
                     </dd>
-                   
+
                     <button className="mt-2  btn btn-primary" type="submit">Submit</button>
                     <Link to="/" className="mt-2 mx-2 btn btn-danger">
                         Cancel

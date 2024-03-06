@@ -35,12 +35,11 @@ function ContactListing() {
                     </div>
                     <table className="table table-bordered table-hover">
                         <thead className="bg-dark text-white">
-                            <tr className="text-center text-danger">
+                            <tr className="text-center">
                                 <th>Name</th>
                                 <th>Email</th>
                                 <th>Phone</th>
                                 <th>Message</th>
-                                
                             </tr>
                         </thead>
                         <tbody className="App">
@@ -51,7 +50,6 @@ function ContactListing() {
                                         <td>{item.email}</td>
                                         <td>{item.phone}</td>
                                         <td>{item.msg}</td>
-                                       
                                     </tr>
                                 ))}
                         </tbody>
