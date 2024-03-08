@@ -36,9 +36,9 @@ function ContactCreate() {
 
 
     return (
-        <div className="container mt-1">
+        <div className="container-fluid mt-1">
             <h4 className="text-center">Create New Contact</h4>
-            <form action="" onSubmit={HandleSubmit} className="form-control">
+            <form action="" onSubmit={HandleSubmit} className="form-control w-25">
                 <dl className="">
 
                     <dt>Name</dt>
